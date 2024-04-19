@@ -1,0 +1,4 @@
+Bundle-Name: demo-openshift-portlet
+Bundle-SymbolicName: openshift.demo.portlet
+Bundle-Version: 1.0.0
+Export-Package: openshift.demo.portlet.constants
