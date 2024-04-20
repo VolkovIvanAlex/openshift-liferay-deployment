@@ -1,6 +1,6 @@
 env: local
-image: liferay/portal:7.4.3.112-ga112
-tag: sha256:18d1282bfb7470d2b185b32dd9f733e341e7796eed90d6c38548154cb23ca9e0
+image: portal:7.4.3.112-ga112
+tag: sha256:7d1349ba55cc94431806df28f8a7e068e9f2f503ee9b8fe1916100cd53b82a86
 registry: image-registry.openshift-image-registry.svc:5000/liferay
 imagePullPolicy: IfNotPresent
 deploymentStrategy: RollingUpdate
@@ -8,10 +8,10 @@ replicas: 1
 resources:
   requests:
     memory: "5Gi"
-    cpu: "4"
+    cpu: "30m"
   limits:
     memory: "5Gi"
-    cpu: "4"
+    cpu: "30m"
 appName: liferay
 
 extraEnv:

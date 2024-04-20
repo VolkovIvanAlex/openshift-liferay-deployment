@@ -3,10 +3,10 @@ replicas: 1
 resources:
   requests:
     memory: "6Gi"
-    cpu: "4"
+    cpu: "30m"
   limits:
     memory: "6Gi"
-    cpu: "4"
+    cpu: "30m"
        
 extraEnv:
   - name: LIFERAY_JVM_OPTS
